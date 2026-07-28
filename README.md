@@ -1,5 +1,7 @@
 # Portfolio — ahmedzakirkhan
 
+**Live: https://ahmezk11.github.io**
+
 Retro/8-bit personal landing page. Dark CRT arcade aesthetic: pixel typography,
 scanlines, neon-on-black, an RPG-style character sheet and quest log.
 
@@ -37,19 +39,24 @@ python3 -m http.server 8000
 
 Then open http://localhost:8000
 
-## Deploy (GitHub Pages)
+## Deploy
+
+Already live on GitHub Pages at https://ahmezk11.github.io — it redeploys
+automatically on every push to `main`:
 
 ```bash
-git init && git add . && git commit -m "portfolio"
-git branch -M main
-git remote add origin https://github.com/<you>/<repo>.git
-git push -u origin main
+python3 build.py          # rebuild index.html after editing _page/_style/_app
+git add -A && git commit -m "update" && git push
 ```
 
-Then in the repo: **Settings → Pages → Source: `main` / root**.
-Live at `https://<you>.github.io/<repo>/`.
+Give it ~30 seconds after pushing. `.nojekyll` is present so GitHub serves the
+files as-is instead of running them through Jekyll.
 
-Any static host works — Netlify, Vercel, Cloudflare Pages — since it's one HTML file.
+Any static host works too — Netlify, Vercel, Cloudflare Pages — since it is one
+self-contained HTML file.
+
+**Note:** `Ahmed-Khan-CV.pdf` here is the public build — same content as the CV in
+`~/Desktop/files` but with the phone number removed, since the site is indexable.
 
 ## Notes
 
