@@ -245,6 +245,8 @@ html.boot-on #boot{display:grid}
 .item.legendary{border-color:var(--amber);box-shadow:5px 5px 0 rgba(255,199,90,.22)}
 .item.legendary:hover{border-color:var(--amber);box-shadow:8px 8px 0 rgba(255,199,90,.34)}
 .item.hide{display:none}
+.item-link{font-family:var(--font);font-size:8px;color:var(--green);margin-top:2px;align-self:flex-start}
+.item-link:hover{color:#fff}
 .item-top{display:flex;justify-content:space-between;align-items:center;gap:10px}
 .rarity{font-family:var(--font);font-size:6.5px;color:var(--cyan);border:1px solid var(--cyan);padding:5px 7px}
 .rarity.gold{color:var(--amber);border-color:var(--amber)}

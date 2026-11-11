@@ -260,6 +260,8 @@ html.boot-on #boot{display:grid}
 .item.legendary{border-color:var(--amber);box-shadow:5px 5px 0 rgba(255,199,90,.22)}
 .item.legendary:hover{border-color:var(--amber);box-shadow:8px 8px 0 rgba(255,199,90,.34)}
 .item.hide{display:none}
+.item-link{font-family:var(--font);font-size:8px;color:var(--green);margin-top:2px;align-self:flex-start}
+.item-link:hover{color:#fff}
 .item-top{display:flex;justify-content:space-between;align-items:center;gap:10px}
 .rarity{font-family:var(--font);font-size:6.5px;color:var(--cyan);border:1px solid var(--cyan);padding:5px 7px}
 .rarity.gold{color:var(--amber);border-color:var(--amber)}
@@ -576,6 +578,7 @@ body.rainbow .title,body.rainbow .h2{animation:rain 1.4s linear infinite}
            plus a browser HUD served by FastAPI. Ollama fallback for offline. Every side-effectful action
            asks for confirmation first.</p>
         <div class="tags"><span>Python</span><span>Claude API</span><span>FastAPI</span><span>Tkinter</span><span>Ollama</span><span>Google API</span><span>Notion API</span></div>
+        <a class="item-link" href="https://github.com/ahmezk11/jarvis-assistant" target="_blank" rel="noopener">&gt; SOURCE</a>
       </article>
 
       <article class="item reveal" data-c="ai">
@@ -595,6 +598,26 @@ body.rainbow .title,body.rainbow .h2{animation:rain 1.4s linear infinite}
         <div class="tags"><span>AI</span><span>FinTech</span><span>48h Build</span></div>
       </article>
 
+      <article class="item reveal" data-c="ai">
+        <div class="item-top"><span class="rarity">ML</span><span class="slot">AI</span></div>
+        <h3>Match Predictor</h3>
+        <p>macOS desktop app that predicts home win / draw / away win for football fixtures. Trained on
+           <b>38,023 matches</b> across five European leagues using Elo ratings, form, head-to-head and match
+           stats, with a local FastAPI service and a drift monitor. Graded against baselines.</p>
+        <div class="tags"><span>Python</span><span>scikit-learn</span><span>FastAPI</span><span>Desktop App</span></div>
+        <a class="item-link" href="https://github.com/ahmezk11/football-predictor" target="_blank" rel="noopener">&gt; SOURCE</a>
+      </article>
+
+      <article class="item reveal" data-c="ai">
+        <div class="item-top"><span class="rarity gold">* HACKATHON</span><span class="slot">AI</span></div>
+        <h3>Payment Guard</h3>
+        <p>UAE Hackathon 2026, Challenge #29 (Cyber Resilience for SMEs). Checks invoices and emails for
+           fraud and phishing before money moves, and gives small-business owners a plain Arabic or English
+           verdict. I built the FastAPI backend: invoice parsing, IBAN, domain and wording checks.</p>
+        <div class="tags"><span>FastAPI</span><span>Fraud Detection</span><span>Phishing</span><span>Team of 3</span></div>
+        <a class="item-link" href="https://github.com/ahmezk11/hackasnapa" target="_blank" rel="noopener">&gt; SOURCE</a>
+      </article>
+
       <article class="item reveal" data-c="web">
         <div class="item-top"><span class="rarity">BACKEND</span><span class="slot">WEB</span></div>
         <h3>UAE Car Aggregator</h3>
@@ -602,6 +625,7 @@ body.rainbow .title,body.rainbow .h2{animation:rain 1.4s linear infinite}
            SQLAlchemy/SQLite store with Pydantic models for listings — make, model, year, price,
            mileage, location and source.</p>
         <div class="tags"><span>FastAPI</span><span>SQLAlchemy</span><span>Pydantic</span><span>SQLite</span></div>
+        <a class="item-link" href="https://github.com/ahmezk11/uae-car-aggregator" target="_blank" rel="noopener">&gt; SOURCE</a>
       </article>
 
       <article class="item reveal" data-c="web">
@@ -667,6 +691,15 @@ body.rainbow .title,body.rainbow .h2{animation:rain 1.4s linear infinite}
            button input through direct GPIO control — real-time hardware/software integration and
            low-level debugging.</p>
         <div class="tags"><span>C</span><span>ARM Assembly</span><span>GPIO</span><span>Raspberry Pi</span></div>
+      </article>
+
+      <article class="item reveal" data-c="systems">
+        <div class="item-top"><span class="rarity">TOOLING</span><span class="slot">SYSTEMS</span></div>
+        <h3>WHOOP BLE Tools</h3>
+        <p>Bluetooth LE diagnostic CLI for a WHOOP strap, no app or account needed. Scans for the strap,
+           dumps its GATT services and streams raw notifications live, decoding standard heart rate.</p>
+        <div class="tags"><span>Python</span><span>Bluetooth LE</span><span>bleak</span></div>
+        <a class="item-link" href="https://github.com/ahmezk11/whoop-ble-tools" target="_blank" rel="noopener">&gt; SOURCE</a>
       </article>
 
       <article class="item reveal" data-c="systems">
